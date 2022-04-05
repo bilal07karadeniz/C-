@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a1,a2,a3,t;
+	cout<<"Please enter 3 angles:"<<endl;
+	cin>>a1>>a2>>a3;
+	t=a1+a2+a3;
+	if(t<=180)
+	{
+		cout<<"It is a triangle.";
+	}
+	else
+	{
+		cout<<"It is not a triangle";
+	}
+	
+	
+	return 0;
+}
