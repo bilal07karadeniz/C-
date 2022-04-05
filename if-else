@@ -1,0 +1,53 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+
+{
+
+    int pass,pass2;
+
+    string name,sname;
+
+    cout<<"Please enter your name and surname "<<endl;
+
+    cin>>name>>sname;
+
+    cout<<"Hello "<<name<<" "<<sname<<"\nPlease create a password"<<endl;
+
+    cin>>pass;
+
+    
+
+    cout<<"Please enter your password again"<<endl;
+
+    cin>>pass2;
+
+    
+
+    if(pass==pass2)
+
+{
+
+    cout<<"Your password created successfully!";
+
+}
+
+    else if(pass!=pass2)
+
+    {
+
+        cout<<"Passwords aren'r match.";
+
+    }
+
+    
+
+    
+
+    
+
+    return 0;
+
+}
