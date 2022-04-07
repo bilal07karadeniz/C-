@@ -1,0 +1,56 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int not1,not2,ort1,ort2,final;
+	string name;
+	
+	cout<<"Welcome to the note average calculater!\nWhat is your name?"<<endl;
+	cin>>name;
+	
+	cout<<"Dear "<<name<<" please enter your first exam's point:"<<endl;
+	cin>>not1;
+	
+	cout<<"Please enter your final score:"<<endl;
+	cin>>not2;
+	
+	ort1=not1*40/100;
+	ort2=not2*60/100;
+	final=ort1+ort2;
+	
+	cout<<"Dear "<<name<<","<<endl<<"Your first score is: "<<not1<<endl<<"Your final score is: "<<not2<<endl<<endl<<"Your Average: "<<final<<endl;
+	
+	
+	if (final>=90&&final<=100)
+	{
+		cout<<"Your grade is AA";
+	}
+		if (final>=80&&final<=89)
+	{
+		cout<<"Your grade is BA";
+	}
+		if (final>=70&&final<=79)
+	{
+		cout<<"Your grade is BB";
+	}
+		if (final>=60&&final<=69)
+	{
+		cout<<"Your grade is CB";
+	}
+		if (final>=50&&final<=59)
+	{
+		cout<<"Your grade is CC";
+	}
+		if (final>=40&&final<=49)
+	{
+		cout<<"Your grade is DC";
+	}
+		if (final<=39)
+	{
+		cout<<"Your grade is FF"<<"You failed!";
+	}
+	
+		
+	return 0;
+	
+}
