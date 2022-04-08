@@ -1,0 +1,60 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	
+	char islem;
+	int paraEkle,paraCek,sifre;
+	string email;
+	
+	cout<<"Merhaba!Lutfen giris yapmak icin e postanizi ve sifrenizi giriniz."<<endl;
+	cin>>email>>sifre;
+	
+	int bakiye1=5000;
+	int bakiye2,bakiye3;
+	cout<<endl<<"Bakiyeniz= "<<bakiye1<<" TL"<<endl;
+	cout<<"Lutfen para eklemek icin + "<<endl<<"Para cekmek icin - tiklayiniz."<<endl;
+	cin>>islem;
+	
+	 switch(islem)
+	 {
+	 	
+	 	case '+':
+	 	cout<<"Lutfen eklemek istediginiz miktari giriniz."<<endl;
+	 	cin>>paraEkle;
+	
+	 	bakiye2=bakiye1+paraEkle;
+	 	cout<<"Yeni bakiyeniz= "<<bakiye2<<" TL";
+	 	break;
+
+	 	
+	 	case '-':
+	 	cout<<"Lutfen cekmek istediginiz miktari giriniz."<<endl;
+	 	cin>>paraCek;
+	 	if (paraCek<=5000)
+		{
+	 	bakiye3=bakiye1-paraCek;
+	 	cout<<"Yeni bakiyeniz= "<<bakiye3<<" TL";
+	 	
+	 	}	 
+		else 
+		{
+			cout<<"Yetersiz Bakiye!";
+		}
+		
+		
+
+	 	break;
+	 	
+	 	
+	 }
+	 
+
+	
+	
+	
+	
+	
+	return 0;
+	
+}
