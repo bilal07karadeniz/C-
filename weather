@@ -1,0 +1,100 @@
+#include <iostream>
+#include <string>
+#include <map>
+using namespace std;
+
+	enum level{monday=1,tuesday,wednesday,thursday,friday,saturday,sunday};
+    map<string, level> levels;
+
+void register_levels()
+{
+    levels["monday"]   = monday;
+    levels["tuesday"] = tuesday;
+    levels["wednesday"]   = wednesday;
+     levels["thursday"]   = thursday;
+      levels["friday"]   = friday;
+       levels["saturday"]   = saturday;
+        levels["sunday"]   = sunday;
+        
+}
+
+int main()
+{
+	string day;
+	string city;
+	register_levels();
+	
+	cout<<"Welcome to the Bilal's Weather Forecast! "<<endl<<"Please enter the city which you want to learn (istanbul/ankara): "<<endl;
+	cin>>city;
+	
+	
+	if(city== "istanbul")
+	{
+		cout<<"Please choose the day : ";
+		cin>>day;
+		
+	
+		switch (levels[day])
+		{
+			case monday:
+				cout<<"at monday in istanbul wheather is suny and 20C/12C";
+			break;	
+			case tuesday:
+				cout<<"at tuesday in istanbul wheather is rainy and 20C/12C";
+			break;
+			case wednesday:
+				cout<<"at wednesday in istanbul wheather is suny and 20C/12C";
+			break;
+			case thursday:
+				cout<<"at thursday in istanbul wheather is rainy and 20C/12C";
+			break;
+			case friday:
+				cout<<"at friday in istanbul wheather is suny and 20C/12C";
+			break;
+			case saturday:
+				cout<<"at saturday in istanbul wheather is suny and 20C/12C";
+			break;
+			case sunday:
+				cout<<"at sunday in istanbul wheather is suny and 20C/12C";
+			break;
+			
+		}
+		
+		
+	}
+	else if(city== "ankara")
+	{
+		cout<<"Please choose the day : ";
+		cin>>day;
+		
+	
+		switch (levels[day])
+		{
+			case monday:
+				cout<<"at monday in ankara wheather is suny and 20C/12C";
+			break;	
+			case tuesday:
+				cout<<"at tuesday in ankara wheather is rainy and 20C/12C";
+			break;
+			case wednesday:
+				cout<<"at wednesday in ankara wheather is suny and 20C/12C";
+			break;
+			case thursday:
+				cout<<"at thursday in ankara wheather is rainy and 20C/12C";
+			break;
+			case friday:
+				cout<<"at friday in ankara wheather is suny and 20C/12C";
+			break;
+			case saturday:
+				cout<<"at saturday in ankara wheather is suny and 20C/12C";
+			break;
+			case sunday:
+				cout<<"at sunday in ankara wheather is suny and 20C/12C";
+			break;
+			
+		}
+		
+		
+	}	
+	return 0;
+}
