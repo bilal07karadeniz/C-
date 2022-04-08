@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int sayi;
+	int result=1;
+	
+	cout<<"Please enter a number to calculate its factorial:"<<endl;
+	cin>>sayi;
+	
+	
+	while(sayi>0)
+	{
+		
+		result*=sayi;
+		sayi--;
+
+		
+		
+	}
+			cout<<result;
+	
+	
+	
+	
+	return 0;
+}
