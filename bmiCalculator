@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	float bmi,w,h;
+	string name;
+	
+	cout<<"Welcome to the Bilal's BMI calculator!"<<endl<<"Please enter your name: ";
+	cin>>name;
+	
+
+	cout<<"Hello "<<name<<" Please enter your weight and height: "<<endl;
+		
+		cin>>w>>h;
+			
+		bmi=w/(h*h);
+			
+		cout<<"Your BMI is "<<bmi;
+			
+		
+			
+			
+		
+		
+		
+		
+		
+
+	
+	
+	
+	return 0;
+}
